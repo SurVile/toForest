@@ -1,0 +1,198 @@
+/* Places ---------------------------------------------------------------- */
+
+input:not(input[type='radio'], input[type='checkbox'], input[type='button'], input[type='reset']) {
+    padding: 8px 16px;
+    border: 2px solid var(--nuance-color-light);
+    border-radius: var(--corner-radius);
+    outline: none;
+    font-family: var(--global-font);
+    color: var(--dark-text-color);
+    font-size: 16px;
+    background-color: var(--nuance-color-light);
+}
+
+/* Radios ---------------------------------------------------------------- */
+
+.gender-variation, label:has(input[type="radio"]) {
+    display: inline-flex;
+    align-items: center;
+}
+
+.gender-variation {
+    gap: 12px;
+}
+
+label:has(input[type="radio"]) {
+    gap: 4px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio_clon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--nuance-color-light);
+    border-radius: 10px;
+    background-color: var(--nuance-color-light);
+}
+
+.radio_clon::before {
+    content: '';
+    position: relative;
+    left: calc((20px - 12px) / 4);
+    top: calc((20px - 12px) / 4);
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: var(--nuance-color-green);
+    visibility: hidden;
+}
+
+.radio_clon.active::before {
+    visibility: visible;
+}
+
+.radio_clon:hover {
+    cursor: pointer;
+}
+
+.radio_clon:active {
+    border-color: var(--nuance-color-green);
+}
+
+/* Select places ---------------------------------------------------------------- */
+
+select {
+    display: none;
+}
+
+.select_clon {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 16px;
+    border: 2px solid var(--nuance-color-light);
+    border-radius: var(--corner-radius);
+    outline: none;
+    color: var(--dark-text-color);
+    background-color: var(--nuance-color-light);
+}
+
+.value-span_clon {
+    flex: 1;
+}
+
+.arrow-select_clon {
+    height: 16px;
+    transition: .4s;
+}
+
+.options-list {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--nuance-color-light);
+    visibility: hidden;
+}
+
+.select_clon.active > .arrow-select_clon {
+    transform: rotate(180deg);
+}
+
+.option_clon {
+    width: 100%;
+    border-radius: var(--corner-radius);
+    padding: 8px 16px;
+    transition: .2s;
+}
+
+.option_clon:first-child {
+    color: #18281DAA;
+}
+
+.option_clon:not(:first-child):hover {
+    background-color: var(--select-color-hover);
+}
+
+/* Checkboxs ---------------------------------------------------------------- */
+
+label:has(input[type="checkbox"]) {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin: 12px 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.check_clon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--nuance-color-light);
+    border-radius: 4px;
+    background-color: var(--nuance-color-light);
+}
+
+.check_clon::before {
+    content: '';
+    position: relative;
+    left: calc((20px - 12px) / 4);
+    top: calc((20px - 12px) / 4);
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    background-color: var(--nuance-color-green);
+    visibility: hidden;
+}
+
+.check_clon.active::before {
+    visibility: visible;
+}
+
+.check_clon:hover {
+    cursor: pointer;
+}
+
+.check_clon:active {
+    border-color: var(--nuance-color-green);
+}
+
+/* Buttons ---------------------------------------------------------------- */
+
+button, input[type='button'], input[type='reset'] {
+    margin-top: var(--margin-hp);
+    padding: var(--global-text-size) calc(var(--global-text-size) * 2);
+    border: 2px solid var(--nuance-color-green);
+    border-radius: var(--corner-radius);
+    font-size: var(--global-text-size);
+    font-weight: 700;
+    color: var(--nuance-color-light);
+    background-color: var(--nuance-color-green);
+}
+
+input[name^='send'] {
+    border-color: var(--accent-color);
+    background: var(--accent-color);
+}
+
+button:hover, input[type='button']:hover, input[type='reset']:hover {
+    border-color: var(--nuance-color-blown);
+    cursor: pointer;
+}
+
+button:active, input[type='button']:active, input[type='reset']:active {
+    background-color: var(--nuance-color-blown);
+}

@@ -1,0 +1,31 @@
+/* Fonts ---------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Regular.ttf') format('truetype'),
+        url('../fonts/Barlow-Regular.eot') format('opentype'),
+        url('../fonts/Barlow-Regular.woff') format('woff'),
+        url('../fonts/Barlow-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Bold.ttf') format('truetype'),
+        url('../fonts/Barlow-Bold.eot') format('opentype'),
+        url('../fonts/Barlow-Bold.woff') format('woff'),
+        url('../fonts/Barlow-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Italic.ttf') format('truetype'),
+        url('../fonts/Barlow-Italic.eot') format('opentype'),
+        url('../fonts/Barlow-Italic.woff') format('woff'),
+        url('../fonts/Barlow-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}

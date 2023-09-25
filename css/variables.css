@@ -1,0 +1,22 @@
+/* Variables ---------------------------------------------------------------- */
+
+:root {
+    --accent-color: #FF9340;
+    --base-color: #213929;
+    --nuance-color-green: #74AD87;
+    --nuance-color-blown: #906635;
+    --nuance-color-light: #FFF9ED;
+    --dark-text-color: #18281D;
+    --select-color-hover: #74AD877A;
+    --error-color: #B20505;
+
+    --global-font: 'Barlow', sans-serif;
+    --global-text-size: 16px;
+    --heading-size: 36px;
+
+    --margin-hp: 12px;
+    --corner-radius: 4px;
+
+    --container-max-width: 1260px;
+    --container-padding: 28px;
+}

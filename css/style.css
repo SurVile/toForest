@@ -1,0 +1,101 @@
+/* Zeroing ---------------------------------------------------------------- */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a::after, a::before {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+/* Global ---------------------------------------------------------------- */
+
+html, body {
+    line-height: 1.5;
+    color: var(--nuance-color-light);
+    font-family: var(--global-font);
+    font-size: var(--global-text-size);
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--base-color);
+}
+
+._wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+._container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    box-sizing: content-box;
+}
+
+[class$='_inner'] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.img_container img, .img_container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.img_container img {
+    object-fit: cover;
+}
+
+.img_container svg {
+    object-fit: contain;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: var(--margin-hp);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Main header ---------------------------------------------------------------- */
+
+.main-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+.main-header_inner {
+    display: flex;
+    padding: 28px 0;
+}
+
+.logotype {
+    height: 36px;
+}
